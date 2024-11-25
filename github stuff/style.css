@@ -1,0 +1,40 @@
+.block {
+    padding: 4px;
+    background: lightblue;
+    border-radius: 2px;
+    margin-left: 4px;
+  }
+  
+  .container {
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid;
+  }
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #3b5bdb;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #142a81;
+  transform: translateY(-5px);
+}
+
+#scrollToTopBtn.show {
+  display: flex;
+}
